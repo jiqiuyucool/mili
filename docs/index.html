@@ -1,0 +1,730 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>进好货，上抖仓！社交电商 - 代购供应链专家</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi" />
+
+
+    <meta name="keywords" content="代购 微商 库存 品牌 共享 抖仓" />
+    <meta name="description"
+        content="抖仓为广大微信代购提供正品低价超值货源，让广大代购轻松找到好的货源，轻松享受低价折扣。包含品牌折扣、外单尾货、工厂优选、网络爆品等我们精挑细选的货品。并且我们提供仓储及完备的售后服务。" />
+    <link rel="icon" href="./src/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="./src/css/common.css?t=18689376439">
+    <link rel="stylesheet" href="./src/plug/swiper/swiper.min.css">
+
+    <style type="text/css">
+        @font-face {
+            font-family: 'iconfont';
+            /* project id 1120001 */
+            src: url('//at.alicdn.com/t/font_1120001_fu60p1v4tx.eot');
+            src: url('//at.alicdn.com/t/font_1120001_fu60p1v4tx.eot?#iefix') format('embedded-opentype'),
+                url('//at.alicdn.com/t/font_1120001_fu60p1v4tx.woff2') format('woff2'),
+                url('//at.alicdn.com/t/font_1120001_fu60p1v4tx.woff') format('woff'),
+                url('//at.alicdn.com/t/font_1120001_fu60p1v4tx.ttf') format('truetype'),
+                url('//at.alicdn.com/t/font_1120001_fu60p1v4tx.svg#iconfont') format('svg');
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+
+    <style type="text/css">
+        .header {
+            height: 110px;
+            padding-top: 30px;
+        }
+
+        .header .main {
+            max-width: 1800px;
+            padding: 0 20px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .header .brand {
+            float: left;
+            overflow: hidden;
+        }
+
+        .header .choose {
+            float: right;
+        }
+
+        .brand .logo {
+            float: left;
+        }
+
+        .brand .name {
+            float: left;
+            margin-left: 10px;
+        }
+
+        .brand .name .n-1 {
+            margin-top: 6px;
+            line-height: 48px;
+            font-size: 40px;
+        }
+
+        .brand .name .n-2 {
+            font-size: 14px;
+        }
+
+        .choose {
+            padding-top: 30px;
+        }
+
+        .choose a {
+            margin-left: 60px;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .choose a.selected {
+            color: #de5752;
+        }
+
+        .container {
+            width: 100%;
+            background-color: #dc4c45;
+            background-image: url(./src/img/white.jpg);
+            background-repeat: repeat-x;
+            height: 720px;
+        }
+
+        .container .swiper-container {
+            display: block
+        }
+
+        .container .main {
+            max-width: 1920px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .container .main .bg {
+            background-image: url(./src/img/background.jpg);
+            max-width: 1820px;
+            height: 670px;
+            margin: 0 auto;
+            -moz-box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer p {
+            text-align: center;
+            line-height: 20px;
+            font-size: 14px;
+            padding: 10px 0px;
+        }
+
+        .footer p a {
+            font-size: 14px;
+        }
+
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content {
+            width: 64%;
+            min-width: 910px;
+            margin: 0 auto;
+            margin-top: 90px;
+            overflow: hidden;
+        }
+
+        .content .iphone {
+            width: 391px;
+            float: left;
+        }
+
+        .content .info {
+            width: 500px;
+            margin-top: 100px;
+            float: right;
+        }
+
+        .iphone .img {
+            background-image: url(./src/img/iphoneBack.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .iphone .img img {
+            width: 52%;
+            margin-left: 24%;
+            margin-top: 2%;
+        }
+
+        .info h2 {
+            color: #de5752;
+            font-size: 28px;
+            line-height: 50px;
+        }
+
+        .info p {
+            font-size: 16px;
+            line-height: 36px;
+        }
+
+        .info .link {
+            margin-top: 2vh;
+            overflow: hidden;
+        }
+
+        .link .code {
+            float: left;
+        }
+
+        .link .btns {
+            float: left;
+            margin-left: 30px;
+        }
+
+        .link .btns .btn {
+            margin-top: 20px
+        }
+
+        .weContainer .main .bg {
+            background-image: url(./src/img/background2.jpg);
+        }
+
+        .weContainer .swiper-container {
+            display: none;
+        }
+
+        .weContainer .about_us {
+            display: block !important;
+        }
+
+        .about_us {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0px 20px;
+            padding-top: 140px;
+        }
+
+        .about_us .info {
+            font-size: 15px;
+            line-height: 34px
+        }
+
+        .about_us .info span {
+            font-weight: 600;
+        }
+
+        .about_us h2 {
+            margin-top: 60px;
+            text-align: center;
+            color: #de5752;
+            font-size: 18px;
+        }
+
+        .contact_us {
+            overflow: hidden;
+            margin-top: 50px;
+        }
+
+        .contact_us .left {
+            overflow: hidden;
+            width: 400px;
+            float: left;
+        }
+
+        .contact_us .right {
+            overflow: hidden;
+            width: 400px;
+            float: right;
+        }
+
+        .contact_us .contact {
+            float: left;
+            line-height: 35px;
+            font-size: 14px;
+            margin-right: 38px;
+        }
+
+        .contact_us .img {
+            float: left;
+        }
+
+        .contact_us .contact h3 {
+            color: #de5752;
+            font-size: 16px;
+        }
+
+        .swiper-container-vertical>.swiper-pagination-bullets {
+            right: 30px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #888888;
+        }
+
+        .go-next {
+            margin-top: 140px;
+        }
+
+        @media screen and (min-width: 750px) and (max-width: 1024px){
+            .container {
+                height: 640px;
+            }
+
+            .container .main .bg {
+                height: 610px;
+            }
+
+            .content{
+                margin-top: 70px;
+            }
+
+            .go-next {
+                margin-top: 100px;
+            }
+
+            .about_us{
+                padding-top: 70px;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            .swiper-container-vertical>.swiper-pagination-bullets {
+                right: 5px;
+            }
+
+            .header {
+                height: 56px;
+                padding-top: 10px;
+            }
+
+            .header .brand {
+                width: 134px;
+                margin: 0 auto;
+                float: initial;
+            }
+
+            .header .brand .logo img {
+                width: 46px !important;
+            }
+
+            .header .choose {
+                display: none;
+            }
+
+            .header .brand .name {
+                margin-left: 8px;
+            }
+
+            .header .brand .name .n-1 {
+                line-height: 22px;
+                font-size: 16px;
+                margin-top: 6px;
+            }
+
+            .header .brand .name .n-2 {
+                font-size: 10px;
+            }
+
+            .content {
+                min-width: initial;
+                margin-top: 10px;
+                width: 100%;
+            }
+
+            .container {
+                height: initial;
+                padding-bottom: 10px;
+            }
+
+            .container .main .bg {
+                height: 77vh;
+            }
+
+            .container .main {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .content .iphone {
+                width: 29vh;
+                margin: 0 auto;
+                margin-top: 2vh;
+                float: initial;
+            }
+
+            .content .info {
+                width: 100%;
+                margin-top: 4vh;
+            }
+
+            .info h2 {
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+            }
+
+            .info p {
+                padding: 0 20px;
+                font-size: 14px;
+                line-height: 18px;
+                text-align: center;
+                margin: 5px 0px 0px 0px;
+            }
+
+            .link .code {
+                width: 100%;
+                float: initial;
+            }
+
+            .link .code {
+                width: 80px;
+                margin: 0 auto;
+                margin-top: 0vh;
+            }
+
+            .link .code img {
+                width: 80px !important;
+            }
+
+            .link .btns {
+                width: 190px;
+                margin: 0 auto;
+                float: initial;
+                overflow: hidden;
+            }
+
+            .link .btns .btn {
+                float: left;
+                margin-top: 2vh !important;
+            }
+
+            .content_1 .link .btns .btn:last-child {
+                margin-left: 30px;
+            }
+
+            .content_2 .btn,
+            .content_3 .btn {
+                float: initial !important;
+                margin: 0 auto;
+                width: 80px;
+            }
+
+            .link .btns img {
+                width: 80px !important;
+            }
+
+            .go-next {
+                position: absolute;
+                width: 100px;
+                bottom: 1vh;
+                left: 50%;
+                margin-left: -30px;
+            }
+
+            .go-next img {
+                width: 60px !important;
+            }
+
+            .footer p {
+                line-height: 14px;
+                font-size: 10px;
+            }
+
+            .footer p a {
+                font-size: 10px;
+            }
+
+            .about_us {
+                padding-top: 30px;
+            }
+
+            .about_us .info {
+                line-height: 20px;
+                font-size: 14px;
+            }
+
+            .about_us h2 {
+                margin-top: 4vh;
+                font-size: 16px;
+                margin-bottom: 2vh;
+            }
+
+            .contact_us {
+                margin-top: 1vh;
+            }
+
+            .contact_us .left {
+                width: 100%;
+                float: initial;
+            }
+
+            .contact_us .right {
+                width: 100%;
+                float: initial;
+                margin-top: 20px;
+            }
+
+            .contact_us .img img {
+                width: 80px !important;
+            }
+
+            .contact_us .contact {
+                line-height: 20px;
+                margin-right: initial;
+            }
+
+            .contact_us .contact h3 {
+                font-size: 14px;
+            }
+
+            .contact_us .img {
+                float: right;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="main">
+            <div class="brand">
+                <div class="logo">
+                    <img src="./src/img/logo.jpg" width="80px">
+                </div>
+                <div class="name">
+                    <h1 class="n-1">抖仓</h1>
+                    <p class="n-2">doucang.com</p>
+                </div>
+            </div>
+            <div class="choose">
+                <a id="chooseHome" class="selected" href="javaScript:void(0)"><i class="iconfont">&#xe668;</i>
+                    首页</a>
+                <a id="chooseWe" href="javaScript:void(0)"><i class="iconfont">&#xe61f;</i> 关于我们</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="container">
+        <div class="main">
+            <div class="bg">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="content content_1">
+                                <div class="iphone">
+                                    <div class="img">
+                                        <img src="./src/img/iphone_1.png">
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h2>进好货 上抖仓</h2>
+                                    <p>每日大牌更新、全场包邮、快速播货、闪电发货、7天无理由退换
+                                        苛刻的货品筛选标准、严格的代理审核机制</p>
+                                    <div class="link">
+                                        <div class="code">
+                                            <img src="./src/img/two_1.png" width="140px">
+                                        </div>
+                                        <div class="btns">
+                                            <div class="btn">
+                                                <a
+                                                    href="https://itunes.apple.com/cn/app/%E6%8A%96%E4%BB%93-%E8%BF%9B%E5%A5%BD%E8%B4%A7-%E4%B8%8A%E6%8A%96%E4%BB%93/id1390442690?mt=8">
+                                                    <img src="./src/img/btn_1_1.png" width="160px">
+                                                </a>
+                                            </div>
+                                            <div class="btn">
+                                                <a href="https://www.pgyer.com/doucang">
+                                                    <img src="./src/img/btn_1_2.png" width="160px">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="go-next">
+                                        <a href="javaScript:void(0)" id="go01">
+                                            <img src="./src/img/goNext.png" width="100px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content content_2">
+                                <div class="iphone">
+                                    <div class="img">
+                                        <img src="./src/img/iphone_2.png">
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h2>代理加盟</h2>
+                                    <p>每日大牌更新、全场包邮、快速播货、闪电发货、7天无理由退换
+                                        苛刻的货品筛选标准、严格的代理审核机制</p>
+                                    <div class="link">
+                                        <div class="code">
+                                            <img src="./src/img/two_8.jpg" width="140px">
+                                        </div>
+                                        <div class="btns">
+                                            <div class="btn" style="margin-top: 52px;">
+                                                <a href="javaScript:void(0)">
+                                                    <img src="./src/img/btn_2_1.png" width="160px">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="go-next">
+                                        <a href="javaScript:void(0)" id="go02">
+                                            <img src="./src/img/goNext.png" width="100px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content content_3">
+                                <div class="iphone">
+                                    <div class="img">
+                                        <img src="./src/img/iphone_3.png">
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <h2>品牌入驻</h2>
+                                    <p>免押金、免服务费、低佣金、结算快 <br>
+                                        清库渠道私密、操作流程简便</p>
+                                    <div class="link">
+                                        <div class="code">
+                                            <img src="./src/img/two_5.jpeg" width="140px">
+                                        </div>
+                                        <div class="btns">
+                                            <div class="btn" style="margin-top: 52px;">
+                                                <a href="javaScript:void(0)">
+                                                    <img src="./src/img/btn_2_1.png" width="160px">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="go-next">
+                                        <a href="javaScript:void(0)" id="go03">
+                                            <img src="./src/img/goNext.png" width="100px">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="about_us">
+                                <p class="info">
+                                    抖仓成立于2018年5月，是聚水潭旗下为分销代理提供优质货品的服务平台。作为国内领先的SaaS-ERP服务商，聚水潭服务的品牌商户已超20万家，基于海量的品牌货品资源和完善的系统支撑，聚水潭在内部孵化推出了抖仓。目前，抖仓的品类已覆盖服饰鞋包、儿童母婴、家居家纺、美妆、食品生鲜和日用百货等。<span>抖仓每日大牌更新，快速播货，货品严格甄选，质量有保障。进好货，上抖仓！全场包邮，闪电发货，7天无理由退换。</span>
+                                </p>
+                                <h2>- 联系我们 -</h2>
+
+                                <div class="contact_us">
+                                    <div class="left">
+                                        <div class="contact">
+                                            <h3>品牌入驻</h3>
+                                            <p class="name">抖抖</p>
+                                            <p>招商电话：13235835156</p>
+                                            <p>邮箱：zs@jushuitan.com</p>
+                                        </div>
+                                        <div class="img">
+                                            <img src="./src/img/two_5.jpeg" width="135px">
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="contact">
+                                            <h3>代理加盟</h3>
+                                            <p class="name">圆圆</p>
+                                            <p>微信号：dc_yuanyuan1</p>
+                                            <p>邮箱：bingmei@jushuitan.com</p>
+                                        </div>
+                                        <div class="img">
+                                            <img src="./src/img/two_8.jpg" width="135px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2019 嘉兴晟商信息科技有限公司 <br><a href="http://www.miibeian.gov.cn/" target="_blank">浙ICP备14011832号-7</a></p>
+    </div>
+
+
+    <script src="./src/plug/swiper/swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // autoplay: {
+            //     delay: 5000,
+            // },
+        });
+
+        swiper.on('slideChange', function () {
+            if (swiper.activeIndex === 3) {
+                document.getElementById("chooseHome").className = ''
+                document.getElementById("chooseWe").className = 'selected'
+            } else {
+                document.getElementById("chooseHome").className = 'selected'
+                document.getElementById("chooseWe").className = ''
+            }
+        })
+
+        document.getElementById("chooseHome").onclick = function () {
+            swiper.slideTo(0)
+            // document.getElementById("container").classList.remove("weContainer")
+        }
+
+        document.getElementById("chooseWe").onclick = function () {
+            swiper.slideTo(3)
+            // document.getElementById("container").className += ' weContainer'
+        }
+
+        document.getElementById("go01").onclick = function () {
+            swiper.slideNext()
+        }
+
+        document.getElementById("go02").onclick = function () {
+            swiper.slideNext()
+        }
+
+        document.getElementById("go03").onclick = function () {
+            swiper.slideNext()
+        }
+
+    </script>
+</body>
+
+</html>
